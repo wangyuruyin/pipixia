@@ -1,0 +1,21 @@
+<template>
+  <div>
+    <tabbar></tabbar>
+    <router-view></router-view>
+  </div>
+</template>
+<script type="text/javascript">
+	import Tabbar from './components/Tabbar'
+	import './assets/iconfont/iconfont.css'
+	export default {
+		components:{
+			tabbar:Tabbar
+		}
+	}
+</script>
+<style lang="scss">
+	*{
+		margin:0;
+		padding: 0;
+	}
+</style>
