@@ -70,9 +70,11 @@
 			flex:1;
 			text-align: center;
 			margin:0 20px 0 20px;
+			color: #909090;
 		}
 		.active{
 			border-bottom: 3px solid black;
+			color:black;
 		}		
 	}
 	body{
