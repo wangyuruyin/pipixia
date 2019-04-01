@@ -10,7 +10,10 @@ import Furnishing from './views/Home/Furnishing'
 import Furniture from './views/Home/Furniture'
 import Recommend from './views/Home/Recommend'
 import Search from './views/Search'
-
+import FurnitureList from './views/FurnitureList'
+import LivingGoods from './views/LivingGoods'
+import login from './views/login'
+import register from './views/register'
 Vue.use(Router)
 
 const router =  new Router({
@@ -41,6 +44,10 @@ const router =  new Router({
         path:'Recommend',
         component: Recommend
       },          
+      {
+        path:'',
+        redirect: '/Home/Recommend'
+      },          
       ]
     },
     {
@@ -50,6 +57,10 @@ const router =  new Router({
     {
       path: '/Shopcar',
       component: Shopcar      
+    },
+    {
+      path: '/login',
+      component: login
     },
     {
       path: '/News',
@@ -62,6 +73,18 @@ const router =  new Router({
     {
       path: '/Search',
       component: Search
+    },
+    {
+      path: '/register',
+      component: register
+    },
+    {
+      path:'/LivingGoods',
+      component:LivingGoods
+    },
+    {
+      path: '/FurnitureList/:myid', //动态路由,
+      component: FurnitureList
     },
     {
       path: '*',
